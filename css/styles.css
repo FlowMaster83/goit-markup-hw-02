@@ -1,5 +1,16 @@
 :root {
-    --accent-color: rgba(33, 150, 243, 1)
+    --accent-color: rgba(33, 150, 243, 1);
+    --background: rgba(47, 48, 58, 1);
+    --white: #ffffff;
+    --transparent: rgba(255, 255, 255, 0.6);
+    --grey: #757575;
+    --white-not-transparent: rgba(255, 255, 255, 1);
+    --blue: #2196F3;
+    --black: rgba(0, 0, 0, 1);
+    --blue-for-modal-button: #188CE8;
+    --white-for-background-buttons: rgba(245, 244, 250, 1);
+    --background-for-section-team: #F5F4FA;
+    --black-for-projects: #212121;
 }
 
 /* для обох сторінок */
@@ -21,12 +32,13 @@ button {
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: #212121;
-    
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: #ffffff;
 }
 
 .header-nav {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: inherit;
@@ -35,37 +47,36 @@ body {
     
 .header-nav:focus,
 .header-nav:hover {
-    color: var(--accent-color)
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
 }
 
 .background-footer {
-    background: rgba(47, 48, 58, 1);
+    background: var(--background);
 }
 
 .footer-address {
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white);
     text-decoration: none;
 }
 
 .footer-mail-tel { 
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--transparent);
     text-decoration: none;
 }
 
 .contact-to { 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--grey);
     text-decoration: none;
 }
 
@@ -75,33 +86,30 @@ body {
 }
 
         /* логотип */
-.logo-link {
+.logo-web {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+    color:var(--blue);
     text-decoration: none;
 }
 
-.logo-header {
+span {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: rgba(0, 0, 0, 1);
+    color: var(--black);
     text-decoration: none;
 }
 
-.logo-footer {
+.logo-studio-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-not-transparent);
     text-decoration: none;
 }
 
@@ -109,18 +117,18 @@ body {
 /* Головна */
         /* Ефективні рішення для вашого бізнесу */
 .section-solutions {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(47, 48, 58, 1);
+    color: var(--white-not-transparent);
+    background-color: var(--background);
 }
 
-.section-solutions h1 {
+.solutions-main-caption {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .modal-button {  
@@ -131,8 +139,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background-color: #188CE8;
+    color: var(--white);
+    background-color: var(--blue-for-modal-button);
     cursor: pointer;
 }
 
@@ -144,63 +152,56 @@ body {
         /* Переваги */
 .benefits {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: inherit;
 }
 
 .benefits-descrition {   
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey);
 }
 
         /* Чим ми займаємось */
-.section-activities {   
+
+.activities-caption {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.71;
     text-align: center;
-    letter-spacing: 0.03em;
     color: inherit;
 }
 
         /* Наша команда */
 .section-team {
-    background: #F5F4FA;
+    background: var(--background-for-section-team)
 }
 
 .team-members {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
-.section-team h2 {    
+.team-main-caption {    
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
     color: inherit;
 }
 
-.section-team h3 {  
+.name-member-team {  
     font-weight: 500;
     font-size: 16px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: inherit;
 }
 
-.section-team p {    
+.position-member-team {    
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey);
 }
 
     /* ПОРТФОЛІО */
@@ -211,41 +212,39 @@ body {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
-    letter-spacing: 0.03em;
     color: inherit;
-    background-color: rgba(245, 244, 250, 1);
+    background-color: var(--white-for-background-buttons);
     cursor: pointer;
 }
 
 .all-buttons:hover,
 .all-buttons:focus {
     background-color: var(--accent-color);
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-not-transparent);
 }
 
         /* Проекти */
 
-.projects a {
+.projects-link {
     text-decoration: none;
 }
 
-.projects>li {
-    background-color: rgba(255, 255, 255, 1);
+.projects-list {
+    background-color: var(--white-not-transparent);
 }
 
-.projects h3 {    
+.projects-caption {    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--black-for-projects);
     text-decoration: none;
 }
 
-.projects p {
+.projects-desc {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--grey);
     text-decoration: none;
 }
